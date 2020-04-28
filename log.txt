@@ -1,0 +1,376 @@
+Retrieving logs for app mysqlapp in org devangenv / space development as m.ramanarv@gmail.com...
+
+   2019-09-09T10:26:49.68+0530 [API/1] OUT Created app with guid e54da2e5-11fb-4522-b59d-ff3c645e49f8
+   2019-09-09T10:26:55.45+0530 [API/6] OUT Updated app with guid e54da2e5-11fb-4522-b59d-ff3c645e49f8 ({"route"=>"87dc4a78-44f6-4769-b67d-f37fd0322f41", :verb=>"add", :relation=>"routes", :related_guid=>"87dc4a78-44f6-4769-b67d-f37fd0322f41"})
+   2019-09-09T10:27:02.40+0530 [API/9] OUT Uploading bits for app with guid e54da2e5-11fb-4522-b59d-ff3c645e49f8
+   2019-09-09T10:27:20.82+0530 [API/2] OUT Creating build for app with guid e54da2e5-11fb-4522-b59d-ff3c645e49f8
+   2019-09-09T10:27:21.76+0530 [API/2] OUT Updated app with guid e54da2e5-11fb-4522-b59d-ff3c645e49f8 ({"state"=>"STARTED"})
+   2019-09-09T10:27:21.87+0530 [STG/0] OUT Downloading dotnet_core_buildpack_beta...
+   2019-09-09T10:27:21.87+0530 [STG/0] OUT Downloading staticfile_buildpack...
+   2019-09-09T10:27:21.88+0530 [STG/0] OUT Downloading java_buildpack...
+   2019-09-09T10:27:21.88+0530 [STG/0] OUT Downloading ruby_buildpack...
+   2019-09-09T10:27:21.91+0530 [STG/0] OUT Downloading dotnet_core_buildpack...
+   2019-09-09T10:27:21.95+0530 [STG/0] OUT Downloaded ruby_buildpack
+   2019-09-09T10:27:21.95+0530 [STG/0] OUT Downloading nodejs_buildpack...
+   2019-09-09T10:27:21.96+0530 [STG/0] OUT Downloaded dotnet_core_buildpack
+   2019-09-09T10:27:21.96+0530 [STG/0] OUT Downloading go_buildpack...
+   2019-09-09T10:27:21.97+0530 [STG/0] OUT Downloaded dotnet_core_buildpack_beta
+   2019-09-09T10:27:21.97+0530 [STG/0] OUT Downloading python_buildpack...
+   2019-09-09T10:27:21.98+0530 [STG/0] OUT Downloaded staticfile_buildpack
+   2019-09-09T10:27:21.98+0530 [STG/0] OUT Downloading php_buildpack...
+   2019-09-09T10:27:21.99+0530 [STG/0] OUT Downloaded nodejs_buildpack
+   2019-09-09T10:27:21.99+0530 [STG/0] OUT Downloading binary_buildpack...
+   2019-09-09T10:27:22.00+0530 [STG/0] OUT Downloaded go_buildpack
+   2019-09-09T10:27:22.01+0530 [STG/0] OUT Downloaded python_buildpack
+   2019-09-09T10:27:22.01+0530 [STG/0] OUT Downloaded php_buildpack
+   2019-09-09T10:27:22.04+0530 [STG/0] OUT Downloaded binary_buildpack
+   2019-09-09T10:27:22.07+0530 [STG/0] OUT Downloaded java_buildpack
+   2019-09-09T10:27:22.07+0530 [STG/0] OUT Cell f157363f-5d47-4de2-9589-568c17ba1e29 creating container for instance e62d9f27-92f1-4f1e-869d-6bc83d6e5bbb
+   2019-09-09T10:27:23.71+0530 [STG/0] OUT Cell f157363f-5d47-4de2-9589-568c17ba1e29 successfully created container for instance e62d9f27-92f1-4f1e-869d-6bc83d6e5bbb
+   2019-09-09T10:27:23.86+0530 [STG/0] OUT Downloading app package...
+   2019-09-09T10:27:25.50+0530 [STG/0] OUT Downloaded app package (31.7M)
+   2019-09-09T10:27:30.61+0530 [STG/0] OUT [1m[31m----->[0m[22m [1m[34mJava Buildpack[0m[22m [34mv4.21[0m [34m(offline)[0m | https://github.com/cloudfoundry/java-buildpack.git#0bc7378
+   2019-09-09T10:27:30.73+0530 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mJvmkill Agent[0m[22m [34m1.16.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so [3m[32m(found in cache)[0m[23m
+   2019-09-09T10:27:30.73+0530 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen Jdk JRE[0m[22m [34m1.8.0_222[0m from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/openjdk-jre-1.8.0_222-bionic.tar.gz [3m[32m(found in cache)[0m[23m
+   2019-09-09T10:27:32.93+0530 [STG/0] OUT        Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre [3m[32m(2.1s)[0m[23m
+   2019-09-09T10:27:32.93+0530 [STG/0] OUT        JVM DNS caching disabled in lieu of BOSH DNS caching
+   2019-09-09T10:27:32.93+0530 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen JDK Like Memory Calculator[0m[22m [34m3.13.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz [3m[32m(found in cache)[0m[23m
+   2019-09-09T10:27:34.73+0530 [STG/0] OUT        Loaded Classes: 16087, Threads: 250
+   2019-09-09T10:27:34.75+0530 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mClient Certificate Mapper[0m[22m [34m1.11.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.11.0-RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-09-09T10:27:34.76+0530 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mContainer Security Provider[0m[22m [34m1.16.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.16.0-RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-09-09T10:27:34.76+0530 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mSpring Auto Reconfiguration[0m[22m [34m2.8.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.8.0-RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-09-09T10:27:52.97+0530 [STG/0] OUT Exit status 0
+   2019-09-09T10:27:52.97+0530 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-09-09T10:27:52.97+0530 [STG/0] OUT Uploading droplet...
+   2019-09-09T10:27:52.97+0530 [STG/0] OUT Uploading build artifacts cache...
+   2019-09-09T10:27:53.09+0530 [STG/0] OUT Uploaded build artifacts cache (128B)
+   2019-09-09T10:27:54.22+0530 [API/17] OUT Creating droplet for app with guid e54da2e5-11fb-4522-b59d-ff3c645e49f8
+   2019-09-09T10:27:56.50+0530 [STG/0] OUT Uploaded droplet (75.3M)
+   2019-09-09T10:27:56.53+0530 [STG/0] OUT Uploading complete
+   2019-09-09T10:27:57.00+0530 [STG/0] OUT Cell f157363f-5d47-4de2-9589-568c17ba1e29 stopping instance e62d9f27-92f1-4f1e-869d-6bc83d6e5bbb
+   2019-09-09T10:27:57.00+0530 [STG/0] OUT Cell f157363f-5d47-4de2-9589-568c17ba1e29 destroying container for instance e62d9f27-92f1-4f1e-869d-6bc83d6e5bbb
+   2019-09-09T10:27:57.50+0530 [CELL/0] OUT Cell 45a156a0-8a95-4f2a-852e-93762f3aae3f creating container for instance 4b1c0617-1e1c-4a46-7856-3800
+   2019-09-09T10:27:58.00+0530 [STG/0] OUT Cell f157363f-5d47-4de2-9589-568c17ba1e29 successfully destroyed container for instance e62d9f27-92f1-4f1e-869d-6bc83d6e5bbb
+   2019-09-09T10:27:58.78+0530 [CELL/0] OUT Cell 45a156a0-8a95-4f2a-852e-93762f3aae3f successfully created container for instance 4b1c0617-1e1c-4a46-7856-3800
+   2019-09-09T10:27:59.07+0530 [CELL/0] OUT Downloading droplet...
+   2019-09-09T10:28:03.49+0530 [CELL/0] OUT Downloaded droplet (75.3M)
+   2019-09-09T10:28:03.49+0530 [CELL/0] OUT Starting health monitoring of container
+   2019-09-09T10:28:04.95+0530 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -Xmx424423K -Xss1M -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=112152K
+   2019-09-09T10:28:07.91+0530 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2019-09-09T10:28:07.91+0530 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2019-09-09T10:28:07.91+0530 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2019-09-09T10:28:07.91+0530 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2019-09-09T10:28:07.91+0530 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2019-09-09T10:28:07.91+0530 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2019-09-09T10:28:07.92+0530 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v2.1.7.RELEASE)
+   2019-09-09T10:28:08.57+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:08.568  INFO 6 --- [           main] pertySourceApplicationContextInitializer : 'cloud' property source added
+   2019-09-09T10:28:08.57+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:08.575  INFO 6 --- [           main] nfigurationApplicationContextInitializer : Reconfiguration enabled
+   2019-09-09T10:28:08.59+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:08.590  INFO 6 --- [           main] c.b.s.s.SpringsqlexampleApplication      : Starting SpringsqlexampleApplication on 4b1c0617-1e1c-4a46-7856-3800 with PID 6 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2019-09-09T10:28:08.59+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:08.590  INFO 6 --- [           main] c.b.s.s.SpringsqlexampleApplication      : The following profiles are active: cloud
+   2019-09-09T10:28:10.21+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:10.216  INFO 6 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+   2019-09-09T10:28:10.27+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:10.275  INFO 6 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 0 repository interfaces.
+   2019-09-09T10:28:10.93+0530 [APP/PROC/WEB/0] ERR Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+   2019-09-09T10:28:11.01+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:11.015  INFO 6 --- [           main] o.c.r.o.s.c.s.r.PooledDataSourceCreator  : Found HikariCP on the classpath. Using it for DataSource connection pooling.
+   2019-09-09T10:28:11.05+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:11.052  INFO 6 --- [           main] o.c.reconfiguration.CloudServiceUtils    : 'dataSource' bean of type with 'javax.sql.DataSource' reconfigured with 'cust123db' bean
+   2019-09-09T10:28:11.28+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:11.288  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3815f16a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2019-09-09T10:28:11.33+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:11.333  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$b7963e9c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2019-09-09T10:28:12.16+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:12.164  INFO 6 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+   2019-09-09T10:28:12.22+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:12.223  INFO 6 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+   2019-09-09T10:28:12.22+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:12.223  INFO 6 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+   2019-09-09T10:28:12.49+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:12.492  INFO 6 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+   2019-09-09T10:28:12.49+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:12.494  INFO 6 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3798 ms
+   2019-09-09T10:28:13.03+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:13.035  INFO 6 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+   2019-09-09T10:28:13.04+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:13.045  WARN 6 --- [           main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+   2019-09-09T10:28:13.54+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:13.547  INFO 6 --- [           main] ContainerTrustManagerFactory$PKIXFactory : Adding System Trust Manager
+   2019-09-09T10:28:13.54+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:13.547  INFO 6 --- [           main] ContainerTrustManagerFactory$PKIXFactory : Adding TrustManager for /etc/ssl/certs/ca-certificates.crt
+   2019-09-09T10:28:13.57+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:13.569  INFO 6 --- [tificates.crt-0] org.cloudfoundry.security.FileWatcher    : Start watching /etc/ssl/certs/ca-certificates.crt
+   2019-09-09T10:28:13.78+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:13.783  INFO 6 --- [           main] c.s.FileWatchingX509ExtendedTrustManager : Initialized TrustManager for /etc/ssl/certs/ca-certificates.crt
+   2019-09-09T10:28:14.23+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:14.235  INFO 6 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+   2019-09-09T10:28:14.25+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:14.255  INFO 6 --- [onnection adder] ContainerTrustManagerFactory$PKIXFactory : Adding System Trust Manager
+   2019-09-09T10:28:14.49+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:14.491  INFO 6 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+   2019-09-09T10:28:14.49+0530 [APP/PROC/WEB/0] OUT 	name: default
+   2019-09-09T10:28:14.49+0530 [APP/PROC/WEB/0] OUT 	...]
+   2019-09-09T10:28:14.64+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:14.643  INFO 6 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+   2019-09-09T10:28:14.64+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:14.646  INFO 6 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+   2019-09-09T10:28:14.98+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:14.981  INFO 6 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+   2019-09-09T10:28:15.36+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:15.358  INFO 6 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+   2019-09-09T10:28:16.14+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:16.144  INFO 6 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2019-09-09T10:28:19.05+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:19.052  INFO 6 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+   2019-09-09T10:28:19.27+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:19.269  WARN 6 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+   2019-09-09T10:28:20.04+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:20.045  WARN 6 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #5 of URL [file:/home/vcap/app/BOOT-INF/classes/schema-mysql.sql]: INSERT INTO `customerdb`.`product` (`pname`, `quantity`, `price`, `date_`) VALUES('Laptop','50','120','33-10-9891'); nested exception is java.sql.SQLSyntaxErrorException: INSERT command denied to user 'be28a7100db2bd'@'54.175.48.207' for table 'product'
+   2019-09-09T10:28:20.04+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:20.048  INFO 6 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+   2019-09-09T10:28:20.05+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:20.051  INFO 6 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+   2019-09-09T10:28:20.06+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:20.063  INFO 6 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+   2019-09-09T10:28:20.09+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:20.091  INFO 6 --- [           main] ConditionEvaluationReportLoggingListener : 
+   2019-09-09T10:28:20.09+0530 [APP/PROC/WEB/0] OUT Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:20.104 ERROR 6 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #5 of URL [file:/home/vcap/app/BOOT-INF/classes/schema-mysql.sql]: INSERT INTO `customerdb`.`product` (`pname`, `quantity`, `price`, `date_`) VALUES('Laptop','50','120','33-10-9891'); nested exception is java.sql.SQLSyntaxErrorException: INSERT command denied to user 'be28a7100db2bd'@'54.175.48.207' for table 'product'
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at com.boot.sql.springsqlexample.SpringsqlexampleApplication.main(SpringsqlexampleApplication.java:10) [classes/:na]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_222]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_222]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_222]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_222]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) [app/:na]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) [app/:na]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51) [app/:na]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:52) [app/:na]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #5 of URL [file:/home/vcap/app/BOOT-INF/classes/schema-mysql.sql]: INSERT INTO `customerdb`.`product` (`pname`, `quantity`, `price`, `date_`) VALUES('Laptop','50','120','33-10-9891'); nested exception is java.sql.SQLSyntaxErrorException: INSERT command denied to user 'be28a7100db2bd'@'54.175.48.207' for table 'product'
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:509) ~[spring-jdbc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:238) ~[spring-jdbc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:48) ~[spring-jdbc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.createSchema(DataSourceInitializer.java:101) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.afterPropertiesSet(DataSourceInitializerInvoker.java:62) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	... 24 common frames omitted
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT Caused by: java.sql.SQLSyntaxErrorException: INSERT command denied to user 'be28a7100db2bd'@'54.175.48.207' for table 'product'
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar!/:na]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar!/:na]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:488) ~[spring-jdbc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:20.10+0530 [APP/PROC/WEB/0] OUT 	... 31 common frames omitted
+   2019-09-09T10:28:20.53+0530 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-09-09T10:28:20.53+0530 [CELL/SSHD/0] OUT Exit status 0
+   2019-09-09T10:28:26.84+0530 [CELL/0] OUT Cell 45a156a0-8a95-4f2a-852e-93762f3aae3f stopping instance 4b1c0617-1e1c-4a46-7856-3800
+   2019-09-09T10:28:26.84+0530 [CELL/0] OUT Cell 45a156a0-8a95-4f2a-852e-93762f3aae3f destroying container for instance 4b1c0617-1e1c-4a46-7856-3800
+   2019-09-09T10:28:26.84+0530 [API/13] OUT Process has crashed with type: "web"
+   2019-09-09T10:28:26.86+0530 [API/13] OUT App instance exited with guid e54da2e5-11fb-4522-b59d-ff3c645e49f8 payload: {"instance"=>"4b1c0617-1e1c-4a46-7856-3800", "index"=>0, "cell_id"=>"45a156a0-8a95-4f2a-852e-93762f3aae3f", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>1, "crash_timestamp"=>1568005106815370329, "version"=>"115563d8-1fdb-485c-846e-0adca228eedd"}
+   2019-09-09T10:28:27.04+0530 [CELL/0] OUT Cell 9a954275-7f82-421f-9904-247e12f74292 creating container for instance d10716dc-2d99-4140-7594-5461
+   2019-09-09T10:28:27.10+0530 [PROXY/0] OUT Exit status 137
+   2019-09-09T10:28:27.63+0530 [CELL/0] OUT Cell 45a156a0-8a95-4f2a-852e-93762f3aae3f successfully destroyed container for instance 4b1c0617-1e1c-4a46-7856-3800
+   2019-09-09T10:28:28.12+0530 [CELL/0] OUT Cell 9a954275-7f82-421f-9904-247e12f74292 successfully created container for instance d10716dc-2d99-4140-7594-5461
+   2019-09-09T10:28:28.42+0530 [CELL/0] OUT Downloading droplet...
+   2019-09-09T10:28:31.53+0530 [CELL/0] OUT Downloaded droplet (75.3M)
+   2019-09-09T10:28:31.53+0530 [CELL/0] OUT Starting health monitoring of container
+   2019-09-09T10:28:32.70+0530 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -Xmx424423K -Xss1M -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=112152K
+   2019-09-09T10:28:35.38+0530 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2019-09-09T10:28:35.38+0530 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2019-09-09T10:28:35.38+0530 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2019-09-09T10:28:35.38+0530 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2019-09-09T10:28:35.38+0530 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2019-09-09T10:28:35.38+0530 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2019-09-09T10:28:35.43+0530 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v2.1.7.RELEASE)
+   2019-09-09T10:28:36.19+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:36.193  INFO 12 --- [           main] pertySourceApplicationContextInitializer : 'cloud' property source added
+   2019-09-09T10:28:36.20+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:36.203  INFO 12 --- [           main] nfigurationApplicationContextInitializer : Reconfiguration enabled
+   2019-09-09T10:28:36.22+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:36.220  INFO 12 --- [           main] c.b.s.s.SpringsqlexampleApplication      : Starting SpringsqlexampleApplication on d10716dc-2d99-4140-7594-5461 with PID 12 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2019-09-09T10:28:36.22+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:36.221  INFO 12 --- [           main] c.b.s.s.SpringsqlexampleApplication      : The following profiles are active: cloud
+   2019-09-09T10:28:38.24+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:38.239  INFO 12 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+   2019-09-09T10:28:38.28+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:38.288  INFO 12 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 0 repository interfaces.
+   2019-09-09T10:28:39.08+0530 [APP/PROC/WEB/0] ERR Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+   2019-09-09T10:28:39.14+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:39.087  INFO 12 --- [           main] o.c.r.o.s.c.s.r.PooledDataSourceCreator  : Found HikariCP on the classpath. Using it for DataSource connection pooling.
+   2019-09-09T10:28:39.17+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:39.177  INFO 12 --- [           main] o.c.reconfiguration.CloudServiceUtils    : 'dataSource' bean of type with 'javax.sql.DataSource' reconfigured with 'cust123db' bean
+   2019-09-09T10:28:39.51+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:39.514  INFO 12 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$58954d04] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2019-09-09T10:28:39.57+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:39.572  INFO 12 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$d8159a36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2019-09-09T10:28:40.33+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:40.336  INFO 12 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+   2019-09-09T10:28:40.39+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:40.397  INFO 12 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+   2019-09-09T10:28:40.39+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:40.398  INFO 12 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+   2019-09-09T10:28:40.61+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:40.618  INFO 12 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+   2019-09-09T10:28:40.61+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:40.618  INFO 12 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4311 ms
+   2019-09-09T10:28:41.14+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:41.141  INFO 12 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+   2019-09-09T10:28:41.15+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:41.152  WARN 12 --- [           main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+   2019-09-09T10:28:41.54+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:41.540  INFO 12 --- [           main] ContainerTrustManagerFactory$PKIXFactory : Adding System Trust Manager
+   2019-09-09T10:28:41.54+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:41.540  INFO 12 --- [           main] ContainerTrustManagerFactory$PKIXFactory : Adding TrustManager for /etc/ssl/certs/ca-certificates.crt
+   2019-09-09T10:28:41.55+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:41.549  INFO 12 --- [tificates.crt-0] org.cloudfoundry.security.FileWatcher    : Start watching /etc/ssl/certs/ca-certificates.crt
+   2019-09-09T10:28:41.72+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:41.728  INFO 12 --- [           main] c.s.FileWatchingX509ExtendedTrustManager : Initialized TrustManager for /etc/ssl/certs/ca-certificates.crt
+   2019-09-09T10:28:42.11+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:42.117  INFO 12 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+   2019-09-09T10:28:42.14+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:42.140  INFO 12 --- [onnection adder] ContainerTrustManagerFactory$PKIXFactory : Adding System Trust Manager
+   2019-09-09T10:28:42.34+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:42.342  INFO 12 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+   2019-09-09T10:28:42.34+0530 [APP/PROC/WEB/0] OUT 	name: default
+   2019-09-09T10:28:42.34+0530 [APP/PROC/WEB/0] OUT 	...]
+   2019-09-09T10:28:42.46+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:42.469  INFO 12 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+   2019-09-09T10:28:42.47+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:42.471  INFO 12 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+   2019-09-09T10:28:42.72+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:42.722  INFO 12 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+   2019-09-09T10:28:43.03+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:43.037  INFO 12 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+   2019-09-09T10:28:43.49+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:43.490  INFO 12 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2019-09-09T10:28:45.17+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:45.170  INFO 12 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+   2019-09-09T10:28:45.29+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:45.293  WARN 12 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+   2019-09-09T10:28:45.84+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:45.848  WARN 12 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #5 of URL [file:/home/vcap/app/BOOT-INF/classes/schema-mysql.sql]: INSERT INTO `customerdb`.`product` (`pname`, `quantity`, `price`, `date_`) VALUES('Laptop','50','120','33-10-9891'); nested exception is java.sql.SQLSyntaxErrorException: INSERT command denied to user 'be28a7100db2bd'@'52.204.50.0' for table 'product'
+   2019-09-09T10:28:45.85+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:45.852  INFO 12 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+   2019-09-09T10:28:45.85+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:45.853  INFO 12 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+   2019-09-09T10:28:45.86+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:45.863  INFO 12 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+   2019-09-09T10:28:45.88+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:45.887  INFO 12 --- [           main] ConditionEvaluationReportLoggingListener : 
+   2019-09-09T10:28:45.88+0530 [APP/PROC/WEB/0] OUT Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:58:45.894 ERROR 12 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #5 of URL [file:/home/vcap/app/BOOT-INF/classes/schema-mysql.sql]: INSERT INTO `customerdb`.`product` (`pname`, `quantity`, `price`, `date_`) VALUES('Laptop','50','120','33-10-9891'); nested exception is java.sql.SQLSyntaxErrorException: INSERT command denied to user 'be28a7100db2bd'@'52.204.50.0' for table 'product'
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at com.boot.sql.springsqlexample.SpringsqlexampleApplication.main(SpringsqlexampleApplication.java:10) [classes/:na]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_222]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_222]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_222]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_222]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) [app/:na]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) [app/:na]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51) [app/:na]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:52) [app/:na]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #5 of URL [file:/home/vcap/app/BOOT-INF/classes/schema-mysql.sql]: INSERT INTO `customerdb`.`product` (`pname`, `quantity`, `price`, `date_`) VALUES('Laptop','50','120','33-10-9891'); nested exception is java.sql.SQLSyntaxErrorException: INSERT command denied to user 'be28a7100db2bd'@'52.204.50.0' for table 'product'
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:509) ~[spring-jdbc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:238) ~[spring-jdbc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:48) ~[spring-jdbc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.createSchema(DataSourceInitializer.java:101) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.afterPropertiesSet(DataSourceInitializerInvoker.java:62) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	... 24 common frames omitted
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT Caused by: java.sql.SQLSyntaxErrorException: INSERT command denied to user 'be28a7100db2bd'@'52.204.50.0' for table 'product'
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar!/:na]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar!/:na]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:488) ~[spring-jdbc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:28:45.89+0530 [APP/PROC/WEB/0] OUT 	... 31 common frames omitted
+   2019-09-09T10:28:46.29+0530 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-09-09T10:28:46.30+0530 [CELL/SSHD/0] OUT Exit status 0
+   2019-09-09T10:28:51.95+0530 [CELL/0] OUT Cell 9a954275-7f82-421f-9904-247e12f74292 stopping instance d10716dc-2d99-4140-7594-5461
+   2019-09-09T10:28:51.95+0530 [CELL/0] OUT Cell 9a954275-7f82-421f-9904-247e12f74292 destroying container for instance d10716dc-2d99-4140-7594-5461
+   2019-09-09T10:28:51.96+0530 [API/3] OUT Process has crashed with type: "web"
+   2019-09-09T10:28:51.98+0530 [API/3] OUT App instance exited with guid e54da2e5-11fb-4522-b59d-ff3c645e49f8 payload: {"instance"=>"d10716dc-2d99-4140-7594-5461", "index"=>0, "cell_id"=>"9a954275-7f82-421f-9904-247e12f74292", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>2, "crash_timestamp"=>1568005131928642941, "version"=>"115563d8-1fdb-485c-846e-0adca228eedd"}
+   2019-09-09T10:28:52.09+0530 [CELL/0] OUT Cell 9219a48e-ca92-4b2f-a298-6286a440f761 creating container for instance f3a6f690-4f7d-43e1-5594-5882
+   2019-09-09T10:28:52.13+0530 [PROXY/0] OUT Exit status 137
+   2019-09-09T10:28:52.58+0530 [CELL/0] OUT Cell 9a954275-7f82-421f-9904-247e12f74292 successfully destroyed container for instance d10716dc-2d99-4140-7594-5461
+   2019-09-09T10:28:53.84+0530 [CELL/0] OUT Cell 9219a48e-ca92-4b2f-a298-6286a440f761 successfully created container for instance f3a6f690-4f7d-43e1-5594-5882
+   2019-09-09T10:28:54.04+0530 [CELL/0] OUT Downloading droplet...
+   2019-09-09T10:28:57.24+0530 [CELL/0] OUT Downloaded droplet (75.3M)
+   2019-09-09T10:28:57.24+0530 [CELL/0] OUT Starting health monitoring of container
+   2019-09-09T10:28:58.49+0530 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -Xmx424423K -Xss1M -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=112152K
+   2019-09-09T10:29:01.29+0530 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2019-09-09T10:29:01.29+0530 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2019-09-09T10:29:01.29+0530 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2019-09-09T10:29:01.29+0530 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2019-09-09T10:29:01.29+0530 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2019-09-09T10:29:01.29+0530 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2019-09-09T10:29:01.29+0530 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v2.1.7.RELEASE)
+   2019-09-09T10:29:01.88+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:01.875  INFO 11 --- [           main] pertySourceApplicationContextInitializer : 'cloud' property source added
+   2019-09-09T10:29:01.88+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:01.882  INFO 11 --- [           main] nfigurationApplicationContextInitializer : Reconfiguration enabled
+   2019-09-09T10:29:01.89+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:01.899  INFO 11 --- [           main] c.b.s.s.SpringsqlexampleApplication      : Starting SpringsqlexampleApplication on f3a6f690-4f7d-43e1-5594-5882 with PID 11 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2019-09-09T10:29:01.90+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:01.899  INFO 11 --- [           main] c.b.s.s.SpringsqlexampleApplication      : The following profiles are active: cloud
+   2019-09-09T10:29:03.38+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:03.378  INFO 11 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+   2019-09-09T10:29:03.42+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:03.424  INFO 11 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+   2019-09-09T10:29:04.06+0530 [APP/PROC/WEB/0] ERR Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+   2019-09-09T10:29:04.07+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:04.074  INFO 11 --- [           main] o.c.r.o.s.c.s.r.PooledDataSourceCreator  : Found HikariCP on the classpath. Using it for DataSource connection pooling.
+   2019-09-09T10:29:04.09+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:04.097  INFO 11 --- [           main] o.c.reconfiguration.CloudServiceUtils    : 'dataSource' bean of type with 'javax.sql.DataSource' reconfigured with 'cust123db' bean
+   2019-09-09T10:29:04.31+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:04.319  INFO 11 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1cfaff34] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2019-09-09T10:29:04.37+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:04.370  INFO 11 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$9c7b4c66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2019-09-09T10:29:05.10+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:05.101  INFO 11 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+   2019-09-09T10:29:05.16+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:05.163  INFO 11 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+   2019-09-09T10:29:05.16+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:05.163  INFO 11 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+   2019-09-09T10:29:05.40+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:05.399  INFO 11 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+   2019-09-09T10:29:05.40+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:05.400  INFO 11 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3369 ms
+   2019-09-09T10:29:05.88+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:05.879  INFO 11 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+   2019-09-09T10:29:05.88+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:05.887  WARN 11 --- [           main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+   2019-09-09T10:29:06.35+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:06.350  INFO 11 --- [           main] ContainerTrustManagerFactory$PKIXFactory : Adding System Trust Manager
+   2019-09-09T10:29:06.35+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:06.352  INFO 11 --- [           main] ContainerTrustManagerFactory$PKIXFactory : Adding TrustManager for /etc/ssl/certs/ca-certificates.crt
+   2019-09-09T10:29:06.36+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:06.365  INFO 11 --- [tificates.crt-0] org.cloudfoundry.security.FileWatcher    : Start watching /etc/ssl/certs/ca-certificates.crt
+   2019-09-09T10:29:06.62+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:06.622  INFO 11 --- [           main] c.s.FileWatchingX509ExtendedTrustManager : Initialized TrustManager for /etc/ssl/certs/ca-certificates.crt
+   2019-09-09T10:29:07.04+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:07.040  INFO 11 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+   2019-09-09T10:29:07.06+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:07.059  INFO 11 --- [onnection adder] ContainerTrustManagerFactory$PKIXFactory : Adding System Trust Manager
+   2019-09-09T10:29:07.31+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:07.310  INFO 11 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+   2019-09-09T10:29:07.31+0530 [APP/PROC/WEB/0] OUT 	name: default
+   2019-09-09T10:29:07.31+0530 [APP/PROC/WEB/0] OUT 	...]
+   2019-09-09T10:29:07.42+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:07.425  INFO 11 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+   2019-09-09T10:29:07.42+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:07.427  INFO 11 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+   2019-09-09T10:29:07.69+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:07.696  INFO 11 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+   2019-09-09T10:29:08.03+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:08.036  INFO 11 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+   2019-09-09T10:29:08.47+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:08.475  INFO 11 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2019-09-09T10:29:09.92+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:09.919  INFO 11 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+   2019-09-09T10:29:10.04+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:10.041  WARN 11 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+   2019-09-09T10:29:10.71+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:10.713  WARN 11 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #5 of URL [file:/home/vcap/app/BOOT-INF/classes/schema-mysql.sql]: INSERT INTO `customerdb`.`product` (`pname`, `quantity`, `price`, `date_`) VALUES('Laptop','50','120','33-10-9891'); nested exception is java.sql.SQLSyntaxErrorException: INSERT command denied to user 'be28a7100db2bd'@'54.175.48.207' for table 'product'
+   2019-09-09T10:29:10.71+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:10.715  INFO 11 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+   2019-09-09T10:29:10.71+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:10.716  INFO 11 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+   2019-09-09T10:29:10.72+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:10.724  INFO 11 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+   2019-09-09T10:29:10.74+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:10.744  INFO 11 --- [           main] ConditionEvaluationReportLoggingListener : 
+   2019-09-09T10:29:10.74+0530 [APP/PROC/WEB/0] OUT Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 2019-09-09 04:59:10.753 ERROR 11 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #5 of URL [file:/home/vcap/app/BOOT-INF/classes/schema-mysql.sql]: INSERT INTO `customerdb`.`product` (`pname`, `quantity`, `price`, `date_`) VALUES('Laptop','50','120','33-10-9891'); nested exception is java.sql.SQLSyntaxErrorException: INSERT command denied to user 'be28a7100db2bd'@'54.175.48.207' for table 'product'
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203) [spring-boot-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at com.boot.sql.springsqlexample.SpringsqlexampleApplication.main(SpringsqlexampleApplication.java:10) [classes/:na]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_222]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_222]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_222]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_222]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) [app/:na]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) [app/:na]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51) [app/:na]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:52) [app/:na]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #5 of URL [file:/home/vcap/app/BOOT-INF/classes/schema-mysql.sql]: INSERT INTO `customerdb`.`product` (`pname`, `quantity`, `price`, `date_`) VALUES('Laptop','50','120','33-10-9891'); nested exception is java.sql.SQLSyntaxErrorException: INSERT command denied to user 'be28a7100db2bd'@'54.175.48.207' for table 'product'
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:509) ~[spring-jdbc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:238) ~[spring-jdbc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:48) ~[spring-jdbc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.createSchema(DataSourceInitializer.java:101) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.afterPropertiesSet(DataSourceInitializerInvoker.java:62) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar!/:2.1.7.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	... 24 common frames omitted
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT Caused by: java.sql.SQLSyntaxErrorException: INSERT command denied to user 'be28a7100db2bd'@'54.175.48.207' for table 'product'
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.17.jar!/:8.0.17]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar!/:na]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar!/:na]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:488) ~[spring-jdbc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+   2019-09-09T10:29:10.75+0530 [APP/PROC/WEB/0] OUT 	... 31 common frames omitted
+   2019-09-09T10:29:11.14+0530 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-09-09T10:29:11.14+0530 [CELL/SSHD/0] OUT Exit status 0
+   2019-09-09T10:29:16.58+0530 [CELL/0] OUT Cell 9219a48e-ca92-4b2f-a298-6286a440f761 stopping instance f3a6f690-4f7d-43e1-5594-5882
+   2019-09-09T10:29:16.58+0530 [CELL/0] OUT Cell 9219a48e-ca92-4b2f-a298-6286a440f761 destroying container for instance f3a6f690-4f7d-43e1-5594-5882
+   2019-09-09T10:29:16.62+0530 [API/2] OUT Process has crashed with type: "web"
+   2019-09-09T10:29:16.64+0530 [API/2] OUT App instance exited with guid e54da2e5-11fb-4522-b59d-ff3c645e49f8 payload: {"instance"=>"f3a6f690-4f7d-43e1-5594-5882", "index"=>0, "cell_id"=>"9219a48e-ca92-4b2f-a298-6286a440f761", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>3, "crash_timestamp"=>1568005156575661990, "version"=>"115563d8-1fdb-485c-846e-0adca228eedd"}
+   2019-09-09T10:29:16.78+0530 [PROXY/0] OUT Exit status 137
+   2019-09-09T10:29:18.07+0530 [CELL/0] OUT Cell 9219a48e-ca92-4b2f-a298-6286a440f761 successfully destroyed container for instance f3a6f690-4f7d-43e1-5594-5882

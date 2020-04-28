@@ -1,0 +1,26 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        initialization-mode: always
+        password: admin
+        platform: mysql
+        url: jdbc:mysql://localhost:3306/myhackerrank1?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5Dialect
+        show-sql: true
+    output:
+      ansi:
+        enabled: ALWAYS
+logging:
+    level:
+      root:
+        info
+    file: logs/applogs.txt
+server:
+  port: 9898
+

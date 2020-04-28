@@ -1,0 +1,13 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+applications:
+  - name: mysqlappang
+path: target/springsqlapp.jar
+domain: cfapps.io
+memory: 1G
+instances: 1
+services:
+  - cust123db
