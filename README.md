@@ -1,2 +1,2 @@
-# springsqlexample
+# QuizAppBackEnd
 QuizAppBackEnd
