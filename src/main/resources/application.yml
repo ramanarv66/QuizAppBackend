@@ -20,7 +20,7 @@ logging:
     level:
       root:
         info
-    file: logs/applogs.txt
+    file: logs/applogs.log
 server:
   port: 9898
 
