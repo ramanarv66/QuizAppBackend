@@ -1,0 +1,210 @@
+1)Which of the following statements are true regarding the finalize( ) method?
+
+
+(a) The finalize ( ) method must be declared with protected accessibility
+(b) The compiler will fail to compile the code that explicitly tries to call the finalize( ) method
+(c) The body of the finalize ( ) method can only access other objects that are eligible for garbage collection
+(d) The finalize ( ) method can be overloaded
+(e) The finalize() method cant be overloaded.
+
+A) d
+
+
+2) Which of the following methods is used to avoid serialization of new class whose super class already implements Serialization?
+a) writeObject()
+b) readWriteObject()
+c) writeReadObject()
+d) unSerializaedObject()
+
+A) a
+
+
+3) What will be the output of the following Java code?
+
+    class exception_handling
+    {
+        public static void main(String args[])
+        {
+            try
+            {
+                int a = args.length;
+                int b = 10 / a;
+                System.out.print(a);
+                try
+                {
+                    if (a == 1)
+                        a = a / a - a;
+                    if (a == 2)
+                    {
+                        int []c = {1};
+                        c[8] = 9;
+                    }
+                }
+                catch (ArrayIndexOutOfBoundException e)
+                {
+                    System.out.println("TypeA");
+                }
+                catch (ArithmeticException e)
+                {
+                    System.out.println("TypeB");
+                }
+            }
+        }
+    }
+a) TypeA
+b) TypeB
+c) Compile Time Error
+d) 0TypeB
+
+A) c
+
+4) Which class provides thread safe implementation of List?
+a) ArrayList
+b) CopyOnWriteArrayList
+c) HashList
+d) List
+
+A) b
+
+5)What will be the output of the following Java code?
+
+    class newthread extends Thread
+    {
+Thread t;
+newthread()
+        {
+   t = new Thread(this,"My Thread");
+   t.start();
+}
+public void run()
+        {
+            try
+            {
+                t.join()  
+       System.out.println(t.getName());
+            }
+            catch(Exception e)
+            {
+            System.out.print("Exception");
+            }
+}
+    }
+    class multithreaded_programing
+    {
+        public static void main(String args[])
+        {
+            new newthread();        
+        }
+    }
+
+a) My Thread
+b) Thread[My Thread,5,main]
+c) Exception
+d) Runtime Error
+
+A) d
+
+6) Which of these type parameters is used for a generic methods to return and accept a number?
+a) K
+b) N
+c) T
+d) V
+
+A) b
+
+7)What will be the output of the following Java code?
+
+    class evaluate
+    {
+        public static void main(String args[])
+            {
+       int arr[] = new int[] {0 , 1, 2, 3, 4, 5, 6, 7, 8, 9};
+       int n = 6;
+                n = arr[arr[n] / 2];
+       System.out.println(arr[n] / 2);
+            }
+    }
+a) 3
+b) 0
+c) 6
+d) 1
+
+A) d
+
+8)What will be the output of the following Java code?
+
+    class exception_handling
+    {
+        public static void main(String args[])
+        {
+            try
+            {
+                throw new NullPointerException ("Hello");
+            }
+            catch(ArithmeticException e)
+            {
+        System.out.print("B");        
+            }
+        }
+    }
+a) A
+b) B
+c) Compilation Error
+d) Runtime Error
+
+A) d
+
+9)class Test
+{
+    static int a;
+     
+    static
+    {
+        a = 4;
+        System.out.println ("inside static blockn");
+        System.out.println ("a = " + a);
+    }
+     
+    Test()
+    {
+        System.out.println ("ninside constructorn");
+        a = 10;
+    }
+     
+    public static void func()
+    {
+        a = a + 1;
+        System.out.println ("a = " + a);
+    }
+     
+    public static void main(String[] args)
+    {
+ 
+        Test obj = new Test();
+        obj.func();
+ 
+    }
+}
+
+a)inside static block
+  a = 4
+  inside constructor
+  a = 11
+b)Compiler Error
+c)Run Time Error
+d)inside static block
+  a = 4
+  inside constructor
+  a = 5
+e)inside static block
+
+A) a
+
+
+10)Which one of the following is correct?
+a)Java applets can not be written in any programming language
+b)An applet is not a small program
+c)An applet can be run on its own
+d)Applets are embedded in another applications
+
+
