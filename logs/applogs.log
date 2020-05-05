@@ -1,0 +1,320 @@
+2020-05-06 00:39:33.101  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : Starting SpringsqlexampleApplication on Ramana66 with PID 42964 (D:\interview-app-git\target\classes started by mrama in D:\interview-app-git)
+2020-05-06 00:39:33.107  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : No active profile set, falling back to default profiles: default
+2020-05-06 00:39:35.591  INFO 42964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-06 00:39:35.715  INFO 42964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 3 repository interfaces.
+2020-05-06 00:39:36.667  INFO 42964 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2cdc0c34] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-06 00:39:36.735  INFO 42964 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$ac5c5966] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-06 00:39:38.091  INFO 42964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2020-05-06 00:39:38.145  INFO 42964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-06 00:39:38.146  INFO 42964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-05-06 00:39:38.368  INFO 42964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-06 00:39:38.369  INFO 42964 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5184 ms
+2020-05-06 00:39:39.096  INFO 42964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-06 00:39:39.378  INFO 42964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-06 00:39:40.619  INFO 42964 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-06 00:39:40.738  INFO 42964 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-06 00:39:40.740  INFO 42964 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-06 00:39:41.011  INFO 42964 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-06 00:39:41.280  INFO 42964 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-06 00:39:42.640  INFO 42964 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7dddfc35'
+2020-05-06 00:39:42.644  INFO 42964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-06 00:39:44.396  WARN 42964 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-06 00:39:44.968  INFO 42964 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-06 00:39:45.400  INFO 42964 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-06 00:39:45.745  INFO 42964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-06 00:39:46.703  INFO 42964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-06 00:39:46.750  INFO 42964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-06 00:39:46.795  INFO 42964 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-06 00:39:47.181  INFO 42964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9898 (http) with context path ''
+2020-05-06 00:39:47.184  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : Started SpringsqlexampleApplication in 14.973 seconds (JVM running for 15.805)
+2020-05-06 00:39:47.211  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : 1)Which of the following statements are true regarding the finalize( ) method?
+2020-05-06 00:39:47.212  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : 4) Which class provides thread safe implementation of List?
+2020-05-06 00:39:47.212  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : 6) Which of these type parameters is used for a generic methods to return and accept a number?
+2020-05-06 00:39:47.212  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : 10)Which one of the following is correct?
+2020-05-06 00:39:47.213  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : (a) The finalize ( ) method must be declared with protected accessibility
+2020-05-06 00:39:47.213  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : (b) The compiler will fail to compile the code that explicitly tries to call the finalize( ) method
+2020-05-06 00:39:47.214  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : (c) The body of the finalize ( ) method can only access other objects that are eligible for garbage collection
+2020-05-06 00:39:47.214  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : (d) The finalize ( ) method can be overloaded
+2020-05-06 00:39:47.214  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : (e) The finalize() method cant be overloaded.
+2020-05-06 00:39:47.215  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : a) ArrayList
+2020-05-06 00:39:47.215  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : b) CopyOnWriteArrayList
+2020-05-06 00:39:47.216  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : c) HashList
+2020-05-06 00:39:47.216  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : d) List
+2020-05-06 00:39:47.216  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : a) K
+2020-05-06 00:39:47.217  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : b) N
+2020-05-06 00:39:47.217  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : c) T
+2020-05-06 00:39:47.217  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : d) V
+2020-05-06 00:39:47.217  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : a)Java applets can not be written in any programming language
+2020-05-06 00:39:47.217  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : b)An applet is not a small program
+2020-05-06 00:39:47.217  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : c)An applet can be run on its own
+2020-05-06 00:39:47.218  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : d)Applets are embedded in another applications
+2020-05-06 00:39:47.218  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) d
+2020-05-06 00:39:47.218  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) b
+2020-05-06 00:39:47.218  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) b
+2020-05-06 00:39:47.218  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : *********
+2020-05-06 00:39:47.219  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : 3) What will be the output of the following Java code?
+2020-05-06 00:39:47.219  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     class exception_handling
+2020-05-06 00:39:47.219  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     {
+2020-05-06 00:39:47.219  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         public static void main(String args[])
+2020-05-06 00:39:47.220  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         {
+2020-05-06 00:39:47.220  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         }
+2020-05-06 00:39:47.220  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     }
+2020-05-06 00:39:47.220  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : 9)class Test
+2020-05-06 00:39:47.220  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : {
+2020-05-06 00:39:47.220  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : 5)What will be the output of the following Java code?
+2020-05-06 00:39:47.220  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     class newthread extends Thread
+2020-05-06 00:39:47.220  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     {
+2020-05-06 00:39:47.220  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : Thread t;
+2020-05-06 00:39:47.220  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : newthread()
+2020-05-06 00:39:47.221  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         {
+2020-05-06 00:39:47.221  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :    t = new Thread(this,"My Thread");
+2020-05-06 00:39:47.221  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :    t.start();
+2020-05-06 00:39:47.221  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : }
+2020-05-06 00:39:47.221  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : public void run()
+2020-05-06 00:39:47.222  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         {
+2020-05-06 00:39:47.222  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             try
+2020-05-06 00:39:47.222  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             {
+2020-05-06 00:39:47.222  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :                 t.join()
+2020-05-06 00:39:47.222  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :        System.out.println(t.getName());
+2020-05-06 00:39:47.222  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             }
+2020-05-06 00:39:47.222  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             {
+2020-05-06 00:39:47.223  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             System.out.print("Exception");
+2020-05-06 00:39:47.223  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             }
+2020-05-06 00:39:47.223  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : }
+2020-05-06 00:39:47.223  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     }
+2020-05-06 00:39:47.223  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     class multithreaded_programing
+2020-05-06 00:39:47.223  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     {
+2020-05-06 00:39:47.223  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         public static void main(String args[])
+2020-05-06 00:39:47.223  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         {
+2020-05-06 00:39:47.223  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             new newthread();
+2020-05-06 00:39:47.224  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         }
+2020-05-06 00:39:47.224  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     }
+2020-05-06 00:39:47.224  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : 7)What will be the output of the following Java code?
+2020-05-06 00:39:47.224  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     class evaluate
+2020-05-06 00:39:47.224  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     {
+2020-05-06 00:39:47.224  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         public static void main(String args[])
+2020-05-06 00:39:47.225  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             {
+2020-05-06 00:39:47.225  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :        int arr[] = new int[] {0 , 1, 2, 3, 4, 5, 6, 7, 8, 9};
+2020-05-06 00:39:47.225  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             }
+2020-05-06 00:39:47.225  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     }
+2020-05-06 00:39:47.225  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : 8)What will be the output of the following Java code?
+2020-05-06 00:39:47.225  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     class exception_handling
+2020-05-06 00:39:47.226  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     {
+2020-05-06 00:39:47.226  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         public static void main(String args[])
+2020-05-06 00:39:47.226  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         {
+2020-05-06 00:39:47.226  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             }
+2020-05-06 00:39:47.226  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             {
+2020-05-06 00:39:47.226  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         System.out.print("B");
+2020-05-06 00:39:47.227  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             }
+2020-05-06 00:39:47.227  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         }
+2020-05-06 00:39:47.227  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     }
+2020-05-06 00:39:47.227  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : a) TypeA
+2020-05-06 00:39:47.228  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : b) TypeB
+2020-05-06 00:39:47.228  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : c) Compile Time Error
+2020-05-06 00:39:47.228  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : d) TypeB
+2020-05-06 00:39:47.228  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     static int a;
+2020-05-06 00:39:47.229  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     static
+2020-05-06 00:39:47.229  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     {
+2020-05-06 00:39:47.229  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         a = 4;
+2020-05-06 00:39:47.229  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         System.out.println ("inside static blockn");
+2020-05-06 00:39:47.229  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :         System.out.println ("a = " + a);
+2020-05-06 00:39:47.229  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :     }
+2020-05-06 00:39:47.229  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : }
+2020-05-06 00:39:47.229  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : a)inside static block
+2020-05-06 00:39:47.230  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :   a = 4
+2020-05-06 00:39:47.230  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :   inside constructor
+2020-05-06 00:39:47.230  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :   a = 11
+2020-05-06 00:39:47.230  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : b)Compiler Error
+2020-05-06 00:39:47.232  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : c)Run Time Error
+2020-05-06 00:39:47.232  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : d)inside static block
+2020-05-06 00:39:47.233  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :   a = 4
+2020-05-06 00:39:47.233  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :   inside constructor
+2020-05-06 00:39:47.233  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :   a = 5
+2020-05-06 00:39:47.233  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : e)inside static block
+2020-05-06 00:39:47.233  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             catch(Exception e)
+2020-05-06 00:39:47.233  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : a) My Thread
+2020-05-06 00:39:47.233  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : b) Thread[My Thread,5,main]
+2020-05-06 00:39:47.233  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : c) Exception
+2020-05-06 00:39:47.234  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : d) Runtime Error
+2020-05-06 00:39:47.234  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :        int n = 6;
+2020-05-06 00:39:47.234  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :                 n = arr[arr[n] / 2];
+2020-05-06 00:39:47.234  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :        System.out.println(arr[n] / 2);
+2020-05-06 00:39:47.234  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : a) 3
+2020-05-06 00:39:47.234  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : b) 0
+2020-05-06 00:39:47.234  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : c) 6
+2020-05-06 00:39:47.235  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : d) 1
+2020-05-06 00:39:47.235  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             try
+2020-05-06 00:39:47.235  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             {
+2020-05-06 00:39:47.235  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :                 throw new NullPointerException ("Hello");
+2020-05-06 00:39:47.235  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      :             catch(ArithmeticException e)
+2020-05-06 00:39:47.235  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : a) A
+2020-05-06 00:39:47.235  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : b) B
+2020-05-06 00:39:47.236  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : c) Compilation Error
+2020-05-06 00:39:47.236  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : d) Runtime Error
+2020-05-06 00:39:47.237  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) c
+2020-05-06 00:39:47.237  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) a
+2020-05-06 00:39:47.237  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) d
+2020-05-06 00:39:47.237  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) d
+2020-05-06 00:39:47.237  INFO 42964 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) d
+2020-05-06 00:44:03.497  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : Starting SpringsqlexampleApplication on Ramana66 with PID 46536 (D:\interview-app-git\target\classes started by mrama in D:\interview-app-git)
+2020-05-06 00:44:03.502  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : No active profile set, falling back to default profiles: default
+2020-05-06 00:44:06.090  INFO 46536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-06 00:44:06.216  INFO 46536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 3 repository interfaces.
+2020-05-06 00:44:07.155  INFO 46536 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc029ca5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-06 00:44:07.230  INFO 46536 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$7b82e9d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-06 00:44:08.977  INFO 46536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2020-05-06 00:44:09.046  INFO 46536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-06 00:44:09.047  INFO 46536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-05-06 00:44:09.329  INFO 46536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-06 00:44:09.330  INFO 46536 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5743 ms
+2020-05-06 00:44:10.044  INFO 46536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-06 00:44:10.338  INFO 46536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-06 00:44:11.609  INFO 46536 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-06 00:44:11.725  INFO 46536 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-06 00:44:11.727  INFO 46536 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-06 00:44:12.011  INFO 46536 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-06 00:44:12.279  INFO 46536 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-06 00:44:13.625  INFO 46536 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3593e074'
+2020-05-06 00:44:13.634  INFO 46536 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-06 00:44:15.509  WARN 46536 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-06 00:44:16.089  INFO 46536 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-06 00:44:16.498  INFO 46536 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-06 00:44:16.846  INFO 46536 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-06 00:44:17.700  INFO 46536 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-06 00:44:17.743  INFO 46536 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-06 00:44:17.785  INFO 46536 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-06 00:44:18.130  INFO 46536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9898 (http) with context path ''
+2020-05-06 00:44:18.133  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : Started SpringsqlexampleApplication in 15.452 seconds (JVM running for 16.256)
+2020-05-06 00:44:18.158  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : 1)Which of the following statements are true regarding the finalize( ) method?
+2020-05-06 00:44:18.158  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : 4) Which class provides thread safe implementation of List?
+2020-05-06 00:44:18.158  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : 6) Which of these type parameters is used for a generic methods to return and accept a number?
+2020-05-06 00:44:18.158  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : 10)Which one of the following is correct?
+2020-05-06 00:44:18.159  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : (a) The finalize ( ) method must be declared with protected accessibility
+2020-05-06 00:44:18.159  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : (b) The compiler will fail to compile the code that explicitly tries to call the finalize( ) method
+2020-05-06 00:44:18.159  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : (c) The body of the finalize ( ) method can only access other objects that are eligible for garbage collection
+2020-05-06 00:44:18.159  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : (d) The finalize ( ) method can be overloaded
+2020-05-06 00:44:18.159  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : (e) The finalize() method cant be overloaded.
+2020-05-06 00:44:18.159  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : a) ArrayList
+2020-05-06 00:44:18.159  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : b) CopyOnWriteArrayList
+2020-05-06 00:44:18.159  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : c) HashList
+2020-05-06 00:44:18.160  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : d) List
+2020-05-06 00:44:18.160  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : a) K
+2020-05-06 00:44:18.160  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : b) N
+2020-05-06 00:44:18.160  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : c) T
+2020-05-06 00:44:18.160  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : d) V
+2020-05-06 00:44:18.160  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : a)Java applets can not be written in any programming language
+2020-05-06 00:44:18.160  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : b)An applet is not a small program
+2020-05-06 00:44:18.160  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : c)An applet can be run on its own
+2020-05-06 00:44:18.160  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : d)Applets are embedded in another applications
+2020-05-06 00:44:18.161  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) d
+2020-05-06 00:44:18.161  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) b
+2020-05-06 00:44:18.161  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) b
+2020-05-06 00:44:18.161  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : *********
+2020-05-06 00:44:18.161  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : 3) What will be the output of the following Java code?
+2020-05-06 00:44:18.162  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     class exception_handling
+2020-05-06 00:44:18.163  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     {
+2020-05-06 00:44:18.163  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         public static void main(String args[])
+2020-05-06 00:44:18.163  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         {
+2020-05-06 00:44:18.163  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         }
+2020-05-06 00:44:18.163  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     }
+2020-05-06 00:44:18.164  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : 9)class Test
+2020-05-06 00:44:18.164  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : {
+2020-05-06 00:44:18.164  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : 5)What will be the output of the following Java code?
+2020-05-06 00:44:18.164  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     class newthread extends Thread
+2020-05-06 00:44:18.164  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     {
+2020-05-06 00:44:18.164  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : Thread t;
+2020-05-06 00:44:18.165  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : newthread()
+2020-05-06 00:44:18.165  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         {
+2020-05-06 00:44:18.165  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :    t = new Thread(this,"My Thread");
+2020-05-06 00:44:18.165  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :    t.start();
+2020-05-06 00:44:18.165  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : }
+2020-05-06 00:44:18.165  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : public void run()
+2020-05-06 00:44:18.165  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         {
+2020-05-06 00:44:18.165  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             try
+2020-05-06 00:44:18.165  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             {
+2020-05-06 00:44:18.165  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :                 t.join()
+2020-05-06 00:44:18.166  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :        System.out.println(t.getName());
+2020-05-06 00:44:18.166  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             }
+2020-05-06 00:44:18.166  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             {
+2020-05-06 00:44:18.166  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             System.out.print("Exception");
+2020-05-06 00:44:18.166  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             }
+2020-05-06 00:44:18.166  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : }
+2020-05-06 00:44:18.166  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     }
+2020-05-06 00:44:18.166  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     class multithreaded_programing
+2020-05-06 00:44:18.166  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     {
+2020-05-06 00:44:18.167  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         public static void main(String args[])
+2020-05-06 00:44:18.168  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         {
+2020-05-06 00:44:18.168  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             new newthread();
+2020-05-06 00:44:18.168  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         }
+2020-05-06 00:44:18.168  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     }
+2020-05-06 00:44:18.168  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : 7)What will be the output of the following Java code?
+2020-05-06 00:44:18.168  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     class evaluate
+2020-05-06 00:44:18.168  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     {
+2020-05-06 00:44:18.168  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         public static void main(String args[])
+2020-05-06 00:44:18.168  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             {
+2020-05-06 00:44:18.169  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :        int arr[] = new int[] {0 , 1, 2, 3, 4, 5, 6, 7, 8, 9};
+2020-05-06 00:44:18.169  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             }
+2020-05-06 00:44:18.169  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     }
+2020-05-06 00:44:18.169  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : 8)What will be the output of the following Java code?
+2020-05-06 00:44:18.169  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     class exception_handling
+2020-05-06 00:44:18.169  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     {
+2020-05-06 00:44:18.169  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         public static void main(String args[])
+2020-05-06 00:44:18.169  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         {
+2020-05-06 00:44:18.169  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             }
+2020-05-06 00:44:18.170  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             {
+2020-05-06 00:44:18.170  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         System.out.print("B");
+2020-05-06 00:44:18.170  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             }
+2020-05-06 00:44:18.170  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         }
+2020-05-06 00:44:18.170  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     }
+2020-05-06 00:44:18.171  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : a) TypeA
+2020-05-06 00:44:18.171  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : b) TypeB
+2020-05-06 00:44:18.171  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : c) Compile Time Error
+2020-05-06 00:44:18.171  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : d) TypeB
+2020-05-06 00:44:18.171  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     static int a;
+2020-05-06 00:44:18.172  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     static
+2020-05-06 00:44:18.172  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     {
+2020-05-06 00:44:18.172  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         a = 4;
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         System.out.println ("inside static blockn");
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :         System.out.println ("a = " + a);
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :     }
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : }
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : a)inside static block
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :   a = 4
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :   inside constructor
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :   a = 11
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : b)Compiler Error
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : c)Run Time Error
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : d)inside static block
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :   a = 4
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :   inside constructor
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :   a = 5
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : e)inside static block
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             catch(Exception e)
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : a) My Thread
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : b) Thread[My Thread,5,main]
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : c) Exception
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : d) Runtime Error
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :        int n = 6;
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :                 n = arr[arr[n] / 2];
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :        System.out.println(arr[n] / 2);
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : a) 3
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : b) 0
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : c) 6
+2020-05-06 00:44:18.173  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : d) 1
+2020-05-06 00:44:18.174  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             try
+2020-05-06 00:44:18.174  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             {
+2020-05-06 00:44:18.174  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :                 throw new NullPointerException ("Hello");
+2020-05-06 00:44:18.174  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      :             catch(ArithmeticException e)
+2020-05-06 00:44:18.174  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : a) A
+2020-05-06 00:44:18.174  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : b) B
+2020-05-06 00:44:18.174  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : c) Compilation Error
+2020-05-06 00:44:18.174  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : d) Runtime Error
+2020-05-06 00:44:18.174  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) c
+2020-05-06 00:44:18.175  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) a
+2020-05-06 00:44:18.175  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) d
+2020-05-06 00:44:18.175  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) d
+2020-05-06 00:44:18.175  INFO 46536 --- [main] c.b.s.s.SpringsqlexampleApplication      : A) d

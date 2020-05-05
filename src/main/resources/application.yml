@@ -4,7 +4,7 @@ spring:
         initialization-mode: always
         password: admin
         platform: mysql
-        url: jdbc:mysql://localhost:3306/myhackerrank1?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+        url: jdbc:mysql://localhost:3306/myhackerrank2331?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
         username: root
     jpa:
         hibernate:
@@ -20,7 +20,7 @@ logging:
     level:
       root:
         info
-    file: logs/applogs.txt
+    file: logs/applogs.log
 server:
   port: 9898
 
