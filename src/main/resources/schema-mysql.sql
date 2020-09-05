@@ -2,6 +2,7 @@
 drop table IF EXISTS scores;
 create table scores (id integer not null, email varchar(255), score integer not null, primary key (id));
 drop table IF EXISTS user;
+drop table IF EXISTS Candidate;
 create TABLE `user` (
   `firstname` varchar(45) DEFAULT NULL,
   `lastname` varchar(45) DEFAULT NULL,
@@ -11,6 +12,16 @@ create TABLE `user` (
   `password` varchar(45) DEFAULT NULL,
   `gender` varchar(45) DEFAULT NULL,
   `id` varchar(45) DEFAULT NULL
+);
+create TABLE `Candidate` (
+                        `firstname` varchar(45) DEFAULT NULL,
+                        `lastname` varchar(45) DEFAULT NULL,
+                        `username` varchar(45) DEFAULT NULL,
+                        `email` varchar(100) DEFAULT NULL,
+                        `phone` varchar(45) DEFAULT NULL,
+                        `password` varchar(45) DEFAULT NULL,
+                        `gender` varchar(45) DEFAULT NULL,
+                        `id` INT AUTO_INCREMENT PRIMARY KEY
 );
 drop table IF EXISTS product;
 create TABLE `product` (
