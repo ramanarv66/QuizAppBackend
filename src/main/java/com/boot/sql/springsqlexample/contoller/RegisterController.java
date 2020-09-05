@@ -2,9 +2,15 @@ package com.boot.sql.springsqlexample.contoller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.boot.sql.springsqlexample.Repo.RegisterEntityRepository;
+import com.boot.sql.springsqlexample.entity.RegisterEntity;
+import com.boot.sql.springsqlexample.model.*;
+import com.boot.sql.springsqlexample.notofication.SendNotification;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -15,18 +21,42 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.boot.sql.springsqlexample.model.User;
-import com.boot.sql.springsqlexample.model.UserResponse;
 import com.boot.sql.springsqlexample.service.UserService;
 @CrossOrigin("*")
 @RestController
-public class CustomerController {
+public class RegisterController {
 	
 	@Autowired
 	UserService userService;
 	@Autowired
 	HttpServletRequest request;
-	
+	@Autowired
+	RegisterEntityRepository registerEntityRepository;
+	@Autowired
+	SendNotification sendNotification;
+
+	@PostMapping("/regCand")
+	public CandidateResponse registerCandidate(@RequestBody CandidateRequest candidateRequest){
+		CandidateResponse response = new CandidateResponse();
+		RegisterEntity registerEntity = new RegisterEntity();
+		BeanUtils.copyProperties(candidateRequest, registerEntity);
+		registerEntity=  registerEntityRepository.save(registerEntity);
+		Optional<RegisterEntity> rr = registerEntityRepository.findById(registerEntity.getId());
+		if(rr.get().getId() > 0){
+			response.setMessage("Success");
+			sendNotification.sendAlerts(candidateRequest);
+		}
+		return response;
+	}
+	@GetMapping("/getCandidatesList")
+	public CandidatesListResponse getCandidatesList(){
+		CandidatesListResponse candidatesListResponse = new CandidatesListResponse();
+		List<RegisterEntity>  list =  registerEntityRepository.findAll();
+		BeanUtils.copyProperties(list,candidatesListResponse);
+		candidatesListResponse.setCandidateDtoList(list);
+		System.out.println(candidatesListResponse);
+		return  candidatesListResponse;
+	}
 	@GetMapping("/test")
 	public String testMethod() {
 		System.out.println(request.getRemoteAddr());
