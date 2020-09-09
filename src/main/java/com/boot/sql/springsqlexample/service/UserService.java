@@ -2,6 +2,8 @@ package com.boot.sql.springsqlexample.service;
 
 import java.util.List;
 
+import com.boot.sql.springsqlexample.model.CandidateRequest;
+import com.boot.sql.springsqlexample.model.CandidateResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +28,19 @@ public class UserService {
 			throw new CustomerNotFoundException("No CusotmerFound With " + user.getEmail()+"email");
 		}
 		
+		return validateString;
+	}
+	public String validateCandidate(CandidateRequest candidateRequest) {
+		String validateString="";
+		try {
+			CandidateResponse candidateResponse =  userDao.validateCandidate(candidateRequest);
+			if(candidateResponse.getUsername().equals(candidateRequest.getUsername())) {
+				validateString=  "Validated";
+			}
+		}catch(CustomerNotFoundException ces) {
+			throw new CustomerNotFoundException("No CusotmerFound With " + candidateRequest.getEmail()+"email");
+		}
+
 		return validateString;
 	}
 

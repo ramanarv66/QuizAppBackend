@@ -36,5 +36,5 @@ logging:
         info
     file: logs/applogs.log
 server:
-  port: 9890
+  port: 9898
 

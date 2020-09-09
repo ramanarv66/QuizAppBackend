@@ -2,19 +2,15 @@ package com.boot.sql.springsqlexample.entity;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @Entity
 @Table(name = "SCORES")
 public class ScoreEntity {
   @Id
-  @GeneratedValue
+  @GeneratedValue(strategy = GenerationType.AUTO)
   int id;
   String email;
   int score;
-
 }

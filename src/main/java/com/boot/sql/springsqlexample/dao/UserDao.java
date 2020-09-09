@@ -3,6 +3,8 @@ package com.boot.sql.springsqlexample.dao;
 import java.sql.Types;
 import java.util.List;
 
+import com.boot.sql.springsqlexample.model.CandidateRequest;
+import com.boot.sql.springsqlexample.model.CandidateResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 /*import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -29,6 +31,19 @@ public class UserDao{
 			throw new CustomerNotFoundException("No CusotmerFound With " + user.getUsername()+"user name");
 		}catch(EmptyResultDataAccessException ee){
 			throw new CustomerNotFoundException("No CusotmerFound With Empty result size " + user.getEmail()+"email");
+		}
+
+	}
+	public CandidateResponse validateCandidate(CandidateRequest candidateRequest) {
+		String candidateUserName = candidateRequest.getUsername();
+		String validateCandidate = "SELECT * FROM fresh33.candidate WHERE username=?";
+		try {
+			return (CandidateResponse) jdbcTemplate.queryForObject(validateCandidate, new Object[] {candidateUserName},new BeanPropertyRowMapper(CandidateResponse.class));
+
+		}catch(CustomerNotFoundException ces) {
+			throw new CustomerNotFoundException("No Candidate With " + candidateRequest.getUsername()+" User name");
+		}catch(EmptyResultDataAccessException ee){
+			throw new CustomerNotFoundException("No CusotmerFound With Empty result size " + candidateRequest.getEmail()+"Email");
 		}
 
 	}

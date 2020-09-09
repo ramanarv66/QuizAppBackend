@@ -1,5 +1,6 @@
 package com.boot.sql.springsqlexample.contoller;
 
+import com.boot.sql.springsqlexample.model.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,9 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.boot.sql.springsqlexample.model.JwtResponse;
-import com.boot.sql.springsqlexample.model.User;
-import com.boot.sql.springsqlexample.model.UserResponse;
 import com.boot.sql.springsqlexample.service.UserService;
 
 @RestController
@@ -50,4 +48,10 @@ public class UserController {
 		return userResponse;
 	}
 
+	@RequestMapping(value = "/validateCand", method = RequestMethod.POST)
+	public CandidateResponse validateCandidate(@RequestBody CandidateRequest candidateRequest) {
+		CandidateResponse candidateResponse = new CandidateResponse();
+		candidateResponse.setMessage(userService.validateCandidate(candidateRequest));
+		return candidateResponse;
+	}
 }
