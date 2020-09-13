@@ -4,7 +4,6 @@ import lombok.Data;
 
 @Data
 public class ScoreResponse {
-  String email;
-  int score;
-  int id;
+  String message;
+
 }

@@ -13,4 +13,11 @@ public class ScoreEntity {
   int id;
   String email;
   int score;
+  String username;
+  String password;
+  String firstname;
+  String lastname;
+  Integer phone;
+  String gender;
+  String city;
 }

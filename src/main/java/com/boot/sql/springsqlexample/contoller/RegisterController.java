@@ -7,7 +7,10 @@ import java.util.Optional;
 import javax.servlet.http.HttpServletRequest;
 
 import com.boot.sql.springsqlexample.Repo.RegisterEntityRepository;
+import com.boot.sql.springsqlexample.Repo.ScoreRepository;
 import com.boot.sql.springsqlexample.entity.RegisterEntity;
+import com.boot.sql.springsqlexample.entity.RegisterEntityResponse;
+import com.boot.sql.springsqlexample.entity.ScoreEntity;
 import com.boot.sql.springsqlexample.model.*;
 import com.boot.sql.springsqlexample.notofication.SendNotification;
 import org.springframework.beans.BeanUtils;
@@ -34,6 +37,8 @@ public class RegisterController {
 	RegisterEntityRepository registerEntityRepository;
 	@Autowired
 	SendNotification sendNotification;
+	@Autowired
+	ScoreRepository scoreRepository;
 
 	@PostMapping("/regCand")
 	public CandidateResponse registerCandidate(@RequestBody CandidateRequest candidateRequest){
@@ -44,7 +49,7 @@ public class RegisterController {
 		Optional<RegisterEntity> rr = registerEntityRepository.findById(registerEntity.getId());
 		if(rr.get().getId() > 0){
 			response.setMessage("Success");
-			sendNotification.sendAlerts(candidateRequest);
+			 sendNotification.sendAlerts(candidateRequest);
 		}
 		return response;
 	}
@@ -57,6 +62,14 @@ public class RegisterController {
 		System.out.println(candidatesListResponse);
 		return  candidatesListResponse;
 	}
+	@GetMapping("/getScores")
+	public ScoreListResponse getScores(){
+		ScoreListResponse scoreListResponse = new ScoreListResponse();
+		List<ScoreEntity>  list =  scoreRepository.findAll();
+		BeanUtils.copyProperties(list,scoreListResponse);
+		scoreListResponse.setScoresList(list);
+		return  scoreListResponse;
+	}
 	@GetMapping("/test")
 	public String testMethod() {
 		System.out.println(request.getRemoteAddr());
@@ -64,44 +77,32 @@ public class RegisterController {
 		System.out.println(request.getHeader("X-FORWARDED-FOR"));
 		return "Hello Ramana!!!";
 	}
+	@PostMapping("/saveScore")
+	public ScoreResponse saveScore(@RequestBody ScoreRequest scoreRequest){
+		ScoreResponse scoreResponse = new ScoreResponse();
+		 ScoreEntity scoreEntity = new ScoreEntity();
+		// BeanUtils.copyProperties(scoreRequest,scoreEntity);
+		RegisterEntity ed = registerEntityRepository.findByEmail(scoreRequest.getEmail());
+		BeanUtils.copyProperties(ed,scoreEntity);
+		scoreEntity.setScore(scoreRequest.getScore());
+		// Optional<ScoreEntity> scoreEntity1 = scoreRepository.findById(scoreEntity.getId());
+		scoreRepository.save(scoreEntity);
+		Optional<ScoreEntity> scoreEntity1 = scoreRepository.findByEmail(ed.getEmail());
+		if (scoreEntity1.get().getId() > 0){
+			scoreResponse.setMessage("Success");
+		}
+		return scoreResponse;
+	}
+
 	@PostMapping("/validate")
-	public UserResponse validate(@RequestBody User user) {
-		UserResponse response = new UserResponse();
-		String resp = userService.validateUser(user);
-		response.setResponse(resp);
-		return response;
+	public CandidateResponse  validate(@RequestBody CandidateRequest candidateRequest){
+		CandidateResponse candidateResponse = new CandidateResponse();
+		RegisterEntity registerEntity = new RegisterEntity();
+		BeanUtils.copyProperties(candidateRequest, registerEntity);
+		RegisterEntity ed = registerEntityRepository.findByEmail(candidateRequest.getEmail());
+		if(ed.getId() >0){
+			candidateResponse.setMessage("validuser");
+		}
+		return candidateResponse;
 	}
-	@PostMapping("/authenticate")
-	public UserResponse authenticate(@RequestBody User user) {
-		System.out.println(request.getRemoteAddr());
-		UserResponse response = new UserResponse();
-		response.setResponse(userService.validateUser(user));
-		return response;
-	}
-	@PostMapping("/register")
-	public UserResponse register(@RequestBody User user) {
-		UserResponse response = new UserResponse();
-		response.setResponse(userService.register(user));
-		return response;
-	}
-	@PutMapping("/update/{email}")
-	public UserResponse updateUser(@RequestBody User user,@PathVariable String email) {
-		UserResponse response = new UserResponse();
-		response.setResponse(userService.editUser(user,email));
-		return response;
-	}
-	@GetMapping(value="/getEmployees")
-	public List<User> getUsers() {
-		List<User> userList = new ArrayList();
-		userList = userService.findAll();
-		return userList;
-	}
-	@DeleteMapping(value="/delete/{username}")
-	public UserResponse delete(@PathVariable String username) {
-		UserResponse response = new UserResponse();
-
-		response.setResponse(userService.deleteEmployee(username));
-		return response;
-	}
-
 }

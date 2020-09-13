@@ -38,8 +38,8 @@ public class QuestionPaperController {
     int isSaved = questionPaperService.saveScore(scoreRequest);
     return isSaved > 0 ? true:false;
   }
-  @GetMapping("scores")
+  /*@GetMapping("scores")
   public ScoreListResponse getScore(){
     return questionPaperService.getScores();
-  }
+  }*/
 }

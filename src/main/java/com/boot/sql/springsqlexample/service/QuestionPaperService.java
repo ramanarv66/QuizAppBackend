@@ -68,7 +68,7 @@ public class QuestionPaperService {
         return scoreRepository.save(scoreRequestEntity).getId();
     }
 
-    public ScoreListResponse getScores() {
+   /* public ScoreListResponse getScores() {
         List<ScoreEntity> scoreEntities = scoreRepository.findAll();
         List<ScoreResponse> scoreResponseList = new ArrayList<>();
         ScoreListResponse scoreListResponse = new ScoreListResponse();
@@ -84,5 +84,5 @@ public class QuestionPaperService {
         scoreListResponse.setScoresList(scoreResponseList);
 
         return scoreListResponse;
-    }
+    }*/
 }
