@@ -12,4 +12,6 @@ public class ScoreRequest {
   @ApiModelProperty(notes = "candidate email id", value = "m.ramana@outlook.com")
   String email;
   int score;
+  String status;
+  String firstname;
 }

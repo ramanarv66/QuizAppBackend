@@ -17,7 +17,6 @@ public class ScoreEntity {
   String password;
   String firstname;
   String lastname;
-  Integer phone;
+  String phone;
   String gender;
-  String city;
 }

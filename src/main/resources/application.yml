@@ -4,7 +4,7 @@ spring:
         initialization-mode: always
         password: admin
         platform: mysql
-        url: jdbc:mysql://localhost:3306/fresh33?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+        url: jdbc:mysql://localhost:3306/fresh66?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
         username: root
     jpa:
         hibernate:
@@ -18,7 +18,7 @@ spring:
         enabled: ALWAYS
     mail:
       host: smtp.gmail.com
-      password: TEST@666047
+      password: Password6rag*
       port: 587
       properties:
         mail:

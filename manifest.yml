@@ -4,10 +4,10 @@ management:
       exposure:
         include: "*"
 applications:
-  - name: mysqlappang
-path: target/springsqlapp.jar
+  - name: hackerrankappang
+path: target/hackerrank.jar
 domain: cfapps.io
 memory: 1G
 instances: 1
 services:
-  - cust1234db
+  - hackerrank

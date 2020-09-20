@@ -15,14 +15,7 @@ import com.boot.sql.springsqlexample.model.*;
 import com.boot.sql.springsqlexample.notofication.SendNotification;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.boot.sql.springsqlexample.service.UserService;
 @CrossOrigin("*")
@@ -49,7 +42,7 @@ public class RegisterController {
 		Optional<RegisterEntity> rr = registerEntityRepository.findById(registerEntity.getId());
 		if(rr.get().getId() > 0){
 			response.setMessage("Success");
-			 sendNotification.sendAlerts(candidateRequest);
+			// sendNotification.sendAlerts(candidateRequest);
 		}
 		return response;
 	}
@@ -104,5 +97,10 @@ public class RegisterController {
 			candidateResponse.setMessage("validuser");
 		}
 		return candidateResponse;
+	}
+
+	@PostMapping("/sendStatus")
+	public void sendStatus(@RequestBody ScoreRequest ScoreRequest){
+		sendNotification.sendStatusAlerts(ScoreRequest);
 	}
 }

@@ -13,6 +13,7 @@ create TABLE `user` (
   `gender` varchar(45) DEFAULT NULL,
   `id` varchar(45) DEFAULT NULL
 );
+
 create TABLE `Candidate` (
                         `firstname` varchar(45) DEFAULT NULL,
                         `lastname` varchar(45) DEFAULT NULL,
@@ -24,17 +25,20 @@ create TABLE `Candidate` (
                         `city` varchar(45) DEFAULT NULL,
                         `id` INT AUTO_INCREMENT PRIMARY KEY
 );
-insert into `Candidate`
-(`username`,
- `password`,
- `firstname`,
- `lastname`,
- `phone`,
- `email`,
- `gender`,
- `city`, `id`)
-VALUES
-('sravani','abcded','sravani123','unknown','878687','srav@outlook.com','female', 'knl',33);
+drop table IF EXISTS scores;
+create TABLE `scores` (
+                             `firstname` varchar(45) DEFAULT NULL,
+                             `lastname` varchar(45) DEFAULT NULL,
+                             `username` varchar(45) DEFAULT NULL,
+                             `email` varchar(100) DEFAULT NULL,
+                             `phone` varchar(45) DEFAULT NULL,
+                             `password` varchar(45) DEFAULT NULL,
+                             `score` INT,
+                             `gender` varchar(45) DEFAULT NULL,
+                             `city` varchar(45) DEFAULT NULL,
+                             `id` INT AUTO_INCREMENT PRIMARY KEY
+);
+
 drop table IF EXISTS product;
 create TABLE `product` (
   `pid` int(11) NOT NULL AUTO_INCREMENT,
